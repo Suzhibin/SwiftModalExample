@@ -9,24 +9,29 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    let myView = CustomView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor=UIColor.white
         // Do any additional setup after loading the view.
-        let myView = CustomView(frame:CGRect (x: 100, y: 100, width: 200, height:200))
+        myView.frame=CGRect(x: 100, y: 100, width: 200, height: 200)
         myView.backgroundColor=UIColor .red
         view.addSubview(myView)
         
-        let myView1 = CustomView(frame:CGRect (x: 100, y: 200, width: 200, height:200))
-        myView1.backgroundColor=UIColor .gray
-        view.addSubview(myView1)
-        
-        let myView2 = CustomView(frame:CGRect (x: 200, y: 400, width: 200, height:200))
-        myView2.backgroundColor=UIColor .green
-        view.addSubview(myView2)
+        let myButton=CustomButton(frame: CGRect (x: 100, y: 350, width: 200, height:200))
+        myButton.backgroundColor=UIColor .gray
+        UIApplication.shared.keyWindow?.addSubview(myButton)
+
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        myView .removeFromSuperview()
+        DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
+            //removeFromSuperview之后 view 还存在内存当中没有被删除
+            print(self)
+        })
+    }
 
     /*
     // MARK: - Navigation

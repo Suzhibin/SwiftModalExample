@@ -36,7 +36,7 @@ class ViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
            if (segue.identifier == "FirstViewController") {
                let send = segue.destination
-               send.title="多层view  弹出"
+               send.title="view  弹出"
                return
            }
            if (segue.identifier == "EarlierSegue") {

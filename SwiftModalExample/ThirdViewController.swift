@@ -31,7 +31,19 @@ class ThirdViewController: UIViewController {
         let vc = storyboard.instantiateViewController(withIdentifier: "ModalViewController")
         vc.view.backgroundColor=UIColor.green
         let topVC = topMostController()
-        topVC?.present(vc, animated: true, completion: nil)
+        topVC?.present(vc, animated: true, completion:{
+            self.showAlertVC()
+        })
+    }
+    
+    func showAlertVC() {
+        let alertVC = UIAlertController(title: "大家好", message: "欢迎来到德莱联盟", preferredStyle: .actionSheet)
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        let okAction = UIAlertAction(title: "好的", style: .default, handler: nil)
+        alertVC.addAction(cancelAction)
+        alertVC.addAction(okAction)
+        let topVC = topMostController()
+        topVC?.present(alertVC, animated: true, completion:nil)
     }
     /*
     // MARK: - Navigation

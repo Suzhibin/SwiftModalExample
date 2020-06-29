@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F01998824A89773001DDF2C /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F01998724A89773001DDF2C /* CustomButton.swift */; };
 		9F895911248604BE00559BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F895910248604BE00559BEC /* AppDelegate.swift */; };
 		9F895913248604BE00559BEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F895912248604BE00559BEC /* SceneDelegate.swift */; };
 		9F895915248604BE00559BEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F895914248604BE00559BEC /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F01998724A89773001DDF2C /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9F89590D248604BE00559BEC /* SwiftModalExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftModalExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F895910248604BE00559BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F895912248604BE00559BEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				9F895939248633CF00559BEC /* FifthViewController.swift */,
 				9F8959242486062500559BEC /* ModalViewController.swift */,
 				9F89593B24863A0100559BEC /* CustomView.swift */,
+				9F01998724A89773001DDF2C /* CustomButton.swift */,
 				9F895916248604BE00559BEC /* Main.storyboard */,
 				9F895919248604BF00559BEC /* Assets.xcassets */,
 				9F89591B248604BF00559BEC /* LaunchScreen.storyboard */,
@@ -178,6 +181,7 @@
 				9F89592E2486108700559BEC /* FirstViewController.swift in Sources */,
 				9F89593C24863A0100559BEC /* CustomView.swift in Sources */,
 				9F8959302486109700559BEC /* SecondViewController.swift in Sources */,
+				9F01998824A89773001DDF2C /* CustomButton.swift in Sources */,
 				9F895911248604BE00559BEC /* AppDelegate.swift in Sources */,
 				9F895932248610A600559BEC /* ThirdViewController.swift in Sources */,
 				9F895913248604BE00559BEC /* SceneDelegate.swift in Sources */,
