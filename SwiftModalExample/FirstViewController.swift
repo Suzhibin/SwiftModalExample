@@ -9,19 +9,20 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-    let myView = CustomView()
+    var myView : CustomView! = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor=UIColor.white
         // Do any additional setup after loading the view.
-        myView.frame=CGRect(x: 100, y: 100, width: 200, height: 200)
+        let myView=CustomView(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
         myView.backgroundColor=UIColor .red
         view.addSubview(myView)
+        self.myView=myView
         
         let myButton=CustomButton(frame: CGRect (x: 100, y: 350, width: 200, height:200))
         myButton.backgroundColor=UIColor .gray
-        UIApplication.shared.keyWindow?.addSubview(myButton)
+        view.addSubview(myButton)
 
     }
     
